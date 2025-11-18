@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 with daily_weather as (
     select 
     date(time) as daily_weather,weather,CLOUDS,HUMIDITY,PRESSURE,TEMP 
